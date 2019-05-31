@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+<template autoinsert="true" id="de.te2m.eclipse.templates.asciidoc.plantuml.uc1" context="de.jcup.asciidoctoreditor.template.contexttype" deleted="false" description="PlantUML Usecase Diagram with sample content" enabled="true" name="plantuml-usecase">[plantuml, ${name}]
+....
+!pragma graphviz_dot jdot
+${cursor}
+actor "Sample Actor" as ac1
+usecase "Sample Usecase" as uc1
+ac1 --&gt; uc1
+....
+</template>
+<template autoinsert="true" id="de.te2m.eclipse.templates.asciidoc.plantuml.seq1" context="de.jcup.asciidoctoreditor.template.contexttype" deleted="false" description="PlantUML Sequence Diagram with sample content" enabled="true" name="plantuml-sequence">[plantuml, ${name}] 
+....
+!pragma graphviz_dot jdot
+actor "Actor 1" as a1
+participant "Participant" as p1
+a1 -&gt; p1: request something
+a1 &lt;- p1: return response
+....
+</template>
+</templates>

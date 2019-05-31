@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+<template autoinsert="true" id="de.te2m.eclipse.templates.asciidoc.table.actors" context="de.jcup.asciidoctoreditor.template.contexttype" deleted="false" description="Actors-Table" enabled="true" name="arc42-actors">[options="header",cols="1,2,2"]
+|===
+|Actor/Name| Domain | Description
+a| ${name} | ${domain} | ${description}
+${cursor}
+|===
+</template>
+<template autoinsert="true" id="de.te2m.eclipse.templates.asciidoc.table.stakeholders" context="de.jcup.asciidoctoreditor.template.contexttype" deleted="false" description="Stakeholders-Table" enabled="true" name="arc42-stakeholders">[options="header",cols="1,2,2"]
+|===
+|Role/Name|Contact|Expectations
+a| ${name} | ${contact} | ${expectation}
+${cursor}
+|===
+</template>
+</templates>

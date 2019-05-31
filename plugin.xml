@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors.templates">
+      <include file="templates/asciidoc-templates.xml"/>
+      <include file="templates/plantuml-templates.xml"/>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="Architecture"
+            id="de.te2m.tools.eclipse.asciidoc">
+      </category>
+      <wizard
+            id="de.te2m.tools.eclipse.asciidoc.wizards.adr.NewADRWizard"
+            name="Architecture Decision Record"
+            icon="icons/sample.png"
+            class="de.te2m.tools.eclipse.asciidoc.wizards.adr.NewADRWizard"
+            category="de.te2m.tools.eclipse.asciidoc">
+      </wizard>
+   </extension>
+
+</plugin>
